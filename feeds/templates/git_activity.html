@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html class="   ">
+<head>
+<link href="https://assets-cdn.github.com/assets/github-8488336393a59083828e685a8702f8734352719a.css" media="all" rel="stylesheet" type="text/css" />
+</head>
+   <div class="activity-tab">
+       <div class="news public_news">
+		{% for activity in activities %}
+           <div class="alert push"><div class="body">{{ activity|safe }}</div></div>
+   		{% endfor %}
+		</div>
+	</div>
+</html>
