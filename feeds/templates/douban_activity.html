@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="renderer" content="webkit">
+        <title>
+            {{ username }}的广播
+        </title>
+        <link href="http://img3.douban.com/f/shire/8674e977bc9019592fb64d046b0ac6a9e6aa9a4d/css/frontpage/_init_.css"
+        rel="stylesheet" type="text/css">
+        
+        <script src="http://img3.douban.com/f/shire/70f77495b2e0d3fa6f0f77ae57d1d9ce84aaeeeb/js/core/_init_.js"
+        data-cfg-corelib="http://img3.douban.com/f/shire/8033e1c2528bb6402c478e00176afb3562abbc21/js/jquery.min.js">
+        </script>
+        <style type="text/css">
+        </style>
+        <link rel="stylesheet" href="http://img3.douban.com/misc/mixed_static/42fe477673103f48.css">
+        
+    </head>
+    
+    <body>
+	{% for content in contents %}
+		{{ content|safe }}
+	{% endfor %}
+</body>
+
+</html>
